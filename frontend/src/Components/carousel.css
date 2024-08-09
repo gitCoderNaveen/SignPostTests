@@ -1,0 +1,52 @@
+/* *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.cardDiv-box{
+    background-size:cover;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex-direction:column;
+}
+.cardDiv-box .heading{
+    margin-bottom:5rem;
+}
+.wrapper{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:3rem;
+}
+.cardDiv-item{
+    min-height:550px;
+    max-width:450px;
+    background:#000;
+    border:3px solid rgba(238, 238, 238, 0.2);
+    border-radius: 2rem;
+    margin:0 2rem;
+    padding:30px 60px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    text-align: center;
+    gap: 1.5rem;
+    color: #fff;
+    transition:0.4s ease-in-out;
+}
+
+.cardDiv-item:hover{
+    transform:translateY(-10px)scale(1.03);
+    box-shadow: 0 0 50px rgba(0, 255, 255, 0.7);
+} */
+
+
+.card{
+    cursor: pointer;
+    width: 10rem;
+}
+.card-body{
+    
+}

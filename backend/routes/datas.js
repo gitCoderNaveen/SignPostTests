@@ -18,5 +18,15 @@ router.post('/post', (req, res) =>{
     res.send(`Data's post page`)
 })
 
+router.get('/get', async (req, res)=>{
+    try {
+        const data = await dataModel.find()// fetch all documents
+        res.json(data); //send data as JSON
+    }catch(err){
+        res.status(500).send('Error')
+    }
+})
+
+
 module.exports=router
 

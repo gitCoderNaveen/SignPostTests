@@ -1,19 +1,17 @@
 const express = require('express')
 const datas = require('./routes/datas')
 const mongoose = require('mongoose')
+const dataModel = require('./models/data-models')
 const cors = require('cors')
 const app = express()
 
 app.use(cors())
-mongoose.connect('mongodb://127.0.0.1:27017/ProductDirectory/productDirectory')
+mongoose.connect('mongodb://127.0.0.1:27017/ProductDirectory')
 
 mongoose.connection.on('connected', ()=>{
     console.log('MongoDB successfully connected')
 })
 
-app.get('/', (req, res)=>{
-    res.send('Backend Server')
-})
 
 app.use('/datas', datas)
 
